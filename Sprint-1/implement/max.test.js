@@ -54,3 +54,6 @@ test("Given an array with non-number values, it should return the max and ignore
 test("Given an array with only non-number values, it should return -Infinity", () => {
   expect(findMax(["hey", "hi", "hello"])).toBe(-Infinity);
 });
+test("Given an array with only non-number values, it should return -Infinity", () => {
+  expect(findMax([true, null, undefined])).toBe(-Infinity);
+});
