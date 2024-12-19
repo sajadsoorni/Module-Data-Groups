@@ -5,7 +5,7 @@ function sum(elements) {
       sum = elements[i] + sum;
     }
   }
-  return sum;
+   return Math.round(sum * 1e10) / 1e10;
 }
 // console.log(sum(["u"]));
 module.exports = sum;
