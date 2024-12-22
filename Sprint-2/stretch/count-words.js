@@ -35,7 +35,7 @@ function countWords(string) {
   const cleanWords = words.map((word) => {
     let cleanWord = "";
     for (let char of word) {
-      if (!punctuation.includes(char.toLowerCase())) {
+      if (!punctuation.includes(char)) {
         cleanWord += char;
       }
     }
