@@ -50,7 +50,7 @@ function countWords(string) {
   }
 
   const sortedWordCount = Object.entries(counter)
-    .sort(([, valueA], [, valueB]) => valueB - valueA)
+    .sort(([, countA], [, countB]) => countB - countA)
     .reduce((acc, [word, value]) => {
       acc[word] = value;
       return acc;
